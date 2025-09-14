@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Fondo del body */
+body {
+    background-color:#FF7F50 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/*  Estilo para el título principal 
+    */
+.encabezado,.servicios{
+    font-size: 4rem;
+    text-align: center;
+    color: #FF7F50;
+    margin-top: 60px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+/* Navbar personalizado */
+.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: #0ba293 !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
