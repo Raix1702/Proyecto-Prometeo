@@ -94,7 +94,7 @@ body::before {
 .navbar {
     background: var(--white);
     box-shadow: 0 2px 20px var(--shadow);
-    padding: 1rem 0;
+    padding: 1rem 0;           /* Mantenemos el padding original */
     border-bottom: 3px solid var(--primary-gold);
     position: sticky;
     top: 0;
@@ -105,8 +105,67 @@ body::before {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--primary-blue) !important;
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    height: 100% !important;   /* El brand ocupa todo el alto disponible */
+    padding: 0 !important;     /* Removemos padding que podría interferir */
+    margin: 0 !important;      /* Removemos margin también */
+}
+
+/* ===== ESTILOS PARA EL LOGO ===== */
+.navbar-logo {
+    height: 56px !important;     /* Altura fija que debería ocupar todo el navbar */
+    width: auto !important;      /* Mantiene la proporción */
+    margin-right: 12px !important; /* Espacio entre logo y texto */
+    margin-top: -8px !important; /* Margen negativo para que se "estire" hacia arriba */
+    margin-bottom: -8px !important; /* Margen negativo para que se "estire" hacia abajo */
+    vertical-align: middle;      /* Alineación vertical */
+    object-fit: contain !important; /* Mantiene proporciones dentro del contenedor */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); /* Sombra sutil */
+    transition: all 0.3s ease;   /* Transición suave */
+    display: block !important;   /* Asegura que se muestre como bloque */
+}
+    object-fit: contain !important; /* Mantiene proporciones dentro del contenedor */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave */
+    display: block !important; /* Asegura que se muestre como bloque */
+}
+
+/* Efecto hover para el logo */
+.navbar-brand:hover .navbar-logo {
+    transform: scale(1.05);    /* Pequeño zoom al hacer hover */
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.15));
+}
+
+/* Ajuste del navbar para dar más altura */
+.navbar {
+    padding: 0.75rem 0;        /* Aumentamos el padding vertical del navbar */
+}
+
+/* Responsivo para el logo */
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 38px !important; /* Tamaño específico para tablets */
+        margin-right: 10px !important;
+    }
+    
+    .navbar {
+        padding: 0.5rem 0;        /* Navbar más compacto en móviles */
+        min-height: 50px;         /* Altura mínima reducida para móviles */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 32px !important;  /* Tamaño específico para móviles pequeños */
+        margin-right: 8px !important;
+    }
+    
+    .navbar {
+        padding: 0.4rem 0;        /* Aún más compacto en pantallas pequeñas */
+        min-height: 45px;         /* Altura mínima aún más reducida */
+    }
 }
 
 .navbar-nav .nav-link {
@@ -792,6 +851,7 @@ body::before {
         font-size: 2.5rem;
     }
 }
+
 .navbar-scrolled {
     background: rgba(255, 255, 255, 0.98) !important;
     backdrop-filter: blur(10px);
@@ -815,6 +875,7 @@ body::before {
   height: 100%;
   border: none;
 }
+
 /* ===== FOOTER CENTRADO ===== */
 footer {
     background: #111; /* Fondo oscuro (puedes quitarlo si quieres transparente) */
