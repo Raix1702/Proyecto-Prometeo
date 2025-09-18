@@ -1,114 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link href="css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Jurídica Prometeo - Verdad y Justicia</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
+    <!-- CSS Personalizado -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!--Heatjer-->>
+    <div id="navbar-container"></div>
+    
+     <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-scales me-2"></i>Prometeo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">
+                            <i class="bi bi-briefcase me-1"></i>Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tarifas">
+                            <i class="bi bi-calculator me-1"></i>Tarifas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="misionVision.html">
+                            <i class="bi bi-info-circle me-1"></i>Nosotros
+                        </a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn-contact" href="https://wa.me/51988206648?text=Hola,%20me%20gustaría%20obtener%20información%20sobre%20los%20servicios%20legales%20que%20brinda%20Prometeo." target="_blank">
+                            <i class="bi bi-whatsapp me-1"></i>Contáctanos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER -->
     <header id="app">
-        <h1>Asociacion Juridica Prometeo Verdad y Justicia</h1>
+        <h1>Asociación Jurídica - Prometeo Verdad y Justicia</h1>
+        <p class="header-subtitle">Especialistas en Derecho Académico y Universitario</p>
     </header>
 
-    <!--Navbar-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Asociacion Juridica Prometeo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Servicios
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Docentes Universitarios</a></li>
-            <li><hr class="dropdown-divider"></li>
-
-            <li><a class="dropdown-item" href="#">Estudiantes Universitarios</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Autoridades Universitarias</a></li>
-            <li><hr class="dropdown-divider"></li>
-
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+   
     
-    <!--Encabezado-->
+    <!-- ENCABEZADO CON SLOGAN -->
     <div id="encabezado">
-        <h2>Especialistas en Derecho Academico y Universitario</h2>
-        <p>Asesoramos y defendemos a docentes, estudiantes y autoridades dentro del ecosistema universitario. Conocemos las reglas del juego academico, y te acompañamos a jugarlo con justicia</h3>
-
+        <h2>Conocemos las reglas del juego académico</h2>
+        <p>Te acompañamos a jugarlo con justicia. Asesoramos y defendemos a docentes, estudiantes y autoridades dentro del ecosistema universitario.</p>
     </div>
     
-    <div id="servicios">
-        <!--Servicios-->
-    <h2>Nuestros Servicios</h2>
-
-        <!--Docentes Universitarios-->
-        <h2>Para Docentes Universitarios--</h2>
-        <ul>
-            <li>Defensa en procesos disciplinarios y administrativos</li>
-            <li>Asesoría en estabilidad, ascensos y concursos</li>
-            <li>Reclamación laborales y salariales</li>
-            <li>Conflictos laborales, nombramientos y estabilidad</li>
-            <li>Concursos de méritos, ascensos y promociones</li>
-        </ul>
-
-        <!--Estudiantes Universitarios-->
-        <h2>Para Estudiantes Universitarios</h2>
-        <ul>
-            <li>Defensa en procesos disciplinarios</li>
-            <li>Apelaciones por pérdida de matrícula o expulsión</li>
-            <li>Protección de derechos académicos y constitucionales</li>
-            <li>Protección de derechos fundamentales en el entorno educativo</li>
-
-        <!--Autoridades Universitarias-->
-        <h2>Para Autoridades Universitarias </h2>
-            <li>Consultoría en gestión legal académica y administrativa</li>
-            <li>Representación frente a entes de control</li>
-            <li>Redacción de reglamentos y normativas internas</li> 
-            <li>Consultoría legal en gestión académica y administrativa</li>
-            <li>Acompañamos en toma de decisiones institucionales</li>
-            <li>Defensa en procesos ético-legales ante órganos de control</li>
-
-        <!--Porque elegir Prometeo-->
-        <h2>¿Por qué elegir Prometeo?</h2>
-        <ul>
-            <li>Profundo conocimiento del entorno académico</li>
-            <li>Enfoque ético, estratégico y personalizado</li>
-            <li>Defensa firme y asesoría clara</li>
-            <li>Compromiso con la verdad y la justicia en la educación</li>
-        </ul>
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="section">
+        <div class="services-header">
+            <h2>Nuestros Servicios</h2>
         </div>
 
-        <!--Contacto-->
-        <footer>
-            <p>Dirección: Jr. Carlos Cueto Fernandini 222-Pueblo Libres</p> 
-            <p>Teléfono:+51 988206648</p>
-            <p>Correo Electrónico: prometeoesverdadyjusticia@gmail.com</p>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>   
-        <script src ="navbar.js"></script>
+        <div class="services-grid">
+            
+            <!-- DOCENTES UNIVERSITARIOS -->
+            <div class="service-card modern" id="docentes">
+                <div class="service-icon">
+                    <i class="bi bi-briefcase-fill"></i>
+                </div>
+                <h3>Para Docentes</h3>
+                <ul class="service-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Asesoría en procesos administrativos</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Defensa en procesos disciplinarios</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Acompañamiento legal</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Concursos y promociones</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Conflictos laborales</li>
+                </ul>
+            </div>
+
+            <!-- ESTUDIANTES UNIVERSITARIOS -->
+            <div class="service-card modern highlighted" id="estudiantes">
+                <div class="service-icon">
+                    <i class="bi bi-backpack-fill"></i>
+                </div>
+                <h3>Para Estudiantes</h3>
+                <ul class="service-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Defensa en procesos disciplinarios</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Asesoría en casos de hostigamiento</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Defensa académica</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Apelaciones académicas</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Protección de derechos</li>
+                </ul>
+            </div>
+
+            <!-- AUTORIDADES UNIVERSITARIAS -->
+            <div class="service-card modern" id="autoridades">
+                <div class="service-icon">
+                    <i class="bi bi-building-fill"></i>
+                </div>
+                <h3>Para Administrativos</h3>
+                <ul class="service-list">
+                    <li><i class="bi bi-check-circle-fill"></i>Asesoría en temas laborales</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Defensa administrativa</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Acompañamiento en procesos internos</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Consultoría legal</li>
+                    <li><i class="bi bi-check-circle-fill"></i>Normativas internas</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECCIÓN TARIFAS Y MODALIDADES -->
+    <section id="tarifas" class="section tarifas-section">
+        <div class="services-header">
+            <h2><i class="bi bi-currency-dollar me-3"></i>Tarifas y Modalidades de Consulta</h2>
+        </div>
+
+        <div class="tarifas-grid">
+            
+            <!-- CONSULTA INICIAL GRATUITA -->
+            <div class="tarifa-card free-consultation">
+                <div class="tarifa-icon">
+                    <i class="bi bi-gift-fill"></i>
+                </div>
+                <h3>Consulta Inicial Gratuita</h3>
+                <div class="tarifa-details">
+                    <div class="detail-item">
+                        <i class="bi bi-clock-fill"></i>
+                        <span><strong>Duración:</strong> 30 minutos</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span><strong>Modalidad:</strong> Presencial, virtual o telefónica</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-list-check"></i>
+                        <span><strong>Incluye:</strong> Evaluación preliminar y orientación básica</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="bi bi-calendar-check"></i>
+                        <span><strong>Agendamiento:</strong> Llamada directa o WhatsApp</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESTRUCTURA DE HONORARIOS -->
+            <div class="tarifa-card honorarios">
+                <div class="tarifa-icon">
+                    <i class="bi bi-file-text-fill"></i>
+                </div>
+                <h3>Estructura de Honorarios</h3>
+                <div class="tarifa-content">
+                    <p>Se definirá en función a la complejidad del caso y la modalidad de contratación.</p>
+                    <div class="honorarios-info">
+                        <div class="info-item">
+                            <i class="bi bi-shield-check"></i>
+                            <span>Transparencia total en costos</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="bi bi-handshake"></i>
+                            <span>Planes de pago flexibles</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="bi bi-graph-up"></i>
+                            <span>Sin costos ocultos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CASOS COMPLETOS -->
+            <div class="tarifa-card casos-completos">
+                <div class="tarifa-icon">
+                    <i class="bi bi-bar-chart-fill"></i>
+                </div>
+                <h3>Casos Completos - Tarifas 2024</h3>
+                <div class="tarifa-content">
+                    <p>Contamos con planes adaptados a docentes, estudiantes y administrativos, garantizando transparencia y accesibilidad.</p>
+                    <div class="casos-features">
+                        <div class="feature-item">
+                            <i class="bi bi-person-check-fill"></i>
+                            <span>Atención personalizada</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-clock-history"></i>
+                            <span>Seguimiento continuo</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-award-fill"></i>
+                            <span>Representación especializada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="action-buttons">
+            <a href="https://wa.me/51988206648?text=Hola,%20me%20gustaría%20agendar%20mi%20consulta%20inicial%20gratuita%20con%20Prometeo." 
+               class="btn-action primary" target="_blank">
+                <i class="bi bi-calendar-check me-2"></i>Agendar Consulta Gratuita
+            </a>
+            <a href="https://wa.me/51988206648?text=Hola,%20me%20gustaría%20conocer%20más%20sobre%20las%20tarifas%20y%20modalidades%20de%20Prometeo." 
+               class="btn-action secondary" target="_blank">
+                <i class="bi bi-info-circle me-2"></i>Solicitar Información
+            </a>
+        </div>
+    </section>
+<section class="location-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- MAPA A LA IZQUIERDA -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="map-wrapper shadow-lg rounded-4 overflow-hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.779521201476!2d-77.07721786768926!3d-12.066272918693047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c91451b2de39%3A0xccdcc3a74536063d!2sJir%C3%B3n%20Carlos%20Cueto%20Fernandini%20222%2C%20Pueblo%20Libre%2015084!5e0!3m2!1ses-419!2spe!4v1758152764410!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- CONTACTO A LA DERECHA -->
+      <div class="col-lg-6">
+        <h3 class="mb-4">📞 Contáctanos</h3>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Jirón Carlos Cueto Fernandini 222, Pueblo Libre, Lima</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +51 988 206 648</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> contacto@prometeo.org</p>
+        <a href="https://wa.me/51988206648" target="_blank" class="btn btn-success">
+          <i class="bi bi-whatsapp me-1"></i> Escríbenos por WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+    <!-- FOOTER -->
+<footer>
+        <div class="footer-bottom">
+            <p>© 2024 Asociación Jurídica Prometeo - Verdad y Justicia. Todos los derechos reservados.</p>
+        </div>
+</footer>
+
+
+    <!-- SCRIPTS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <!-- SCRIPT PERSONALIZADO -->
+    <script src="js/navbar.js"></script>
 </body>
 </html>
